@@ -29,104 +29,12 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
-
-.imagem-secundaria {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    float: left;
-    margin: 10px;
-    display: block;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.616);
-}
-
-/* Estilos do Menu Dropdown */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #ccc;
-    padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links do Menu */
-.dropdown-menu a {
-    color: black;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover no link do menu */
-.dropdown-menu a:hover {
-    background-color: #ddd;
-}
-
-/* Estilos do Ícone de Menu */
-#imagem-menu {
-    display: block;
-    float: left;
-    margin-top: 10%;
-    margin-left: 15%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-/* Animação do Ícone ao Passar o Mouse */
-#imagem-menu:hover {
-    transform: rotate(90deg) translateY(10px);
-}
-
-/* Exibir o Menu Dropdown ao Passar o Mouse no Ícone */
-.imagem-secundaria:hover .dropdown-menu {
-    display: block;
-}
-
 .mud-cor-sec {
-    display: block;
     color: whitesmoke;
-    text-decoration: none;
-    float: left;
-    margin-left: 1.8%;
-}
-/* Estilos Gerais */
-body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: whitesmoke;
+    float: left;
+    margin-left: 3%;
 }
-
-/* Estilos da Barra Superior */
-#top-bar {
-    width: 100%;
-    height: 90px;
-    background-color: #000000;
-    color: skyblue;
-    font-weight: bold;
-    position: absolute;
-    text-align: center;
-    line-height: 60px;
-    z-index: 1000;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.637);
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: transform 1s ease, opacity 1s ease;
-}
-
-#top-bar.visible2 {
-    transform: translateY(0);
-    opacity: 1;
-}
-
 .imagem-secundaria {
     width: 50px;
     height: 50px;
@@ -135,6 +43,7 @@ body {
     margin: 10px;
     display: block;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.616);
+    position: relative; /* Adicionando posição relativa para que o dropdown menu seja posicionado corretamente */
 }
 
 /* Estilos do Menu Dropdown */
@@ -148,10 +57,10 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     opacity: 0;
-    border-radius: 7px;
+    border-radius: 10px;
     transform: translateY(-20px);
-    transition: all 0.3s ease; /* Transição suave */
-    visibility: hidden; /* Esconde o menu visualmente */
+    transition: all 0.3s ease;
+    visibility: hidden;
 }
 
 /* Links do Menu */
@@ -160,6 +69,7 @@ body {
     padding: 8px 12px;
     text-decoration: none;
     display: block;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -178,11 +88,6 @@ body {
     height: 50px;
     cursor: pointer;
     transition: transform 0.3s ease;
-}
-
-/* Animação do Ícone ao Passar o Mouse */
-#imagem-menu:hover {
-    transform: rotate(90deg) translateY(10px);
 }
 
 /* Exibir o Menu Dropdown com Efeito */
