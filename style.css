@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+#top-bar {
+    width: 100%;
+    height: 90px; /* Ajuste a altura conforme necessário */
+    background-color: #000000;
+    color: skyblue;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    line-height: 60px; /* Centraliza o texto verticalmente */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.637);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+#top-bar.visible2 {
+    transform: translateY(0);
+    opacity: 1;
+}
+.imagem-secundaria {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    display: block;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.616);
+}
+.mud-cor-sec {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    float: left;
+    margin-left: 1.8%;
+}
+
+.link-origin:hover {
+    color: rgba(255, 255, 255, 0.658);
+    cursor: pointer;
+}
+
+.link-origin {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    width: 0px;
+    padding: 10px;
+    height: 0px;
+    border-radius: 20px;
+    transition: all 0.2s ease-out;
+}
+p {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+#imagem-menu {
+    display: block;
+    float: left;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 50px;
+    height: 50px;
+}
