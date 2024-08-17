@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const imageContainer = document.querySelector('.use');
 
@@ -13,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     observer.observe(imageContainer);
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenElements = document.querySelectorAll('.container, .container2, .container3');
     hiddenElements.forEach(el => observer.observe(el));
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     const topBar = document.getElementById('top-bar');
 
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para exibir o top-bar após um pequeno atraso
     setTimeout(showTopBar, 500); // Ajuste o tempo de atraso conforme necessário
 });
+
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.imagens-g');
@@ -61,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(image);
     });
 });
+
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const topBar = document.querySelector('#top-bar');
