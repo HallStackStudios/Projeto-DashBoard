@@ -29,12 +29,14 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
+
 .mud-cor-sec {
     color: whitesmoke;
     margin: 0;
     float: left;
     margin-left: 3%;
 }
+
 .imagem-secundaria {
     width: 50px;
     height: 50px;
@@ -43,14 +45,14 @@ body {
     margin: 10px;
     display: block;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.616);
-    position: relative; /* Adicionando posição relativa para que o dropdown menu seja posicionado corretamente */
+    position: relative;
 }
 
 /* Estilos do Menu Dropdown */
 .dropdown-menu {
     display: block;
     position: absolute;
-    top: 70px; /* Ajustado para posição abaixo da imagem */
+    top: 70px;
     left: 0;
     background-color: rgba(68, 68, 68, 0.918);
     padding: 10px;
@@ -95,4 +97,46 @@ body {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
+}
+
+/* Estilos do Submenu */
+.dropdown-item {
+    position: relative;
+}
+
+.submenu {
+    display: block;
+    position: absolute;
+    left: 120%; /* Adiciona distância do menu principal */
+    top: 0;
+    background-color: rgba(68, 68, 68, 0.918);
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    visibility: hidden;
+    width: 200px; /* Ajuste a largura do submenu conforme necessário */
+}
+
+/* Exibir o Submenu com Efeito */
+.dropdown-item:hover .submenu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Estilos dos links do submenu */
+.submenu a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+    background-color: #858585;
 }
